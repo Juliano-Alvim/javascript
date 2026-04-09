@@ -13,3 +13,7 @@ h1 {
 ul {
     columns: 2;
 }
+
+h2 {
+    color: lightblue;
+}
