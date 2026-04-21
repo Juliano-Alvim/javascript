@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <h1>Você já pode tomar cerveja?</h1>
+    Idade: <input type="number" name="idade" id="idade">
+    <input type="submit" value="Verificar" onclick="clicar()">
+    <div id="res">
+        <p>Resultado:</p>
+    </div>
+    <script>
+        function clicar() {
+            var res = document.getElementById('res')
+            var valor = document.getElementById('idade')
+            var idade = Number(valor.value)
+            if (idade >= 18) {
+                res.innerHTML = '<p>Você pode comprar cerveja!</p>'
+            } else {
+                res.innerHTML = '<p>Você <strong>NÃO</strong> pode comprar cerveja!</p>'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Brasileiro?</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro?</h1>
+    País: <input type="text" name="texto1" id="texto1">
+    <input type="submit" value="Verificar" onclick="clicar()">
+    <div id="res">
+        <p>Aqui fica o resultado!</p>
+    </div>
+    <script>
+        function clicar() {
+            var res = document.getElementById('res')
+            var país = document.getElementById('texto1')
+            var país1 = país.value
+            if (país1 == 'Brasil') {
+                res.innerHTML = '<p>Você é <strong>Brasileiro</strong>!</p>'
+            } else {
+                res.innerHTML = '<p>Você é <strong>Estrangeiro</strong>!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
