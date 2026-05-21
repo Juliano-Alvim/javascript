@@ -16,8 +16,8 @@ function contar() {
     var f = Number(fim.value);
     var p = Number(passo.value);
     if (p <= 0) {
-        window.alert('Passo inválido! Considerando PASSO 1')
-        p = 1
+      window.alert("Passo inválido! Considerando PASSO 1");
+      p = 1;
     }
     if (i < f) {
       for (var c = i; c <= f; c += p) {
